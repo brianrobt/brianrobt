@@ -19,6 +19,10 @@
   </a>
 </p>
 
+<p>
+  <img src="./github-metrics.svg" alt="GitHub metrics for Brian Thompson" width="90%">
+</p>
+
 ## About Me
 
 I've built and maintained open source tooling around Linux packaging, release tracking, and automation. Most of my public work is centered on making AUR maintenance and Arch-based development workflows more repeatable, easier to test, and easier to ship.
