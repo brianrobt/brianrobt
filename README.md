@@ -5,18 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/brianrobt?tab=followers">
-    <img src="https://img.shields.io/github/followers/brianrobt?style=flat-square&label=followers" alt="GitHub followers">
-  </a>
-  <a href="https://github.com/brianrobt?tab=repositories">
-    <img src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=public%20repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fbrianrobt" alt="Public repositories">
-  </a>
-  <a href="https://github.com/brianrobt?tab=repositories&q=&type=source">
-    <img src="https://img.shields.io/github/stars/brianrobt?style=flat-square&label=repo%20stars" alt="Repository stars">
-  </a>
-  <a href="https://www.brianrobt.com">
-    <img src="https://img.shields.io/website?url=https%3A//www.brianrobt.com" alt="Personal website">
-  </a>
+  <a href="https://github.com/brianrobt?tab=followers"><img src="https://img.shields.io/github/followers/brianrobt?style=flat-square&label=followers" alt="GitHub followers"></a>
+  <a href="https://github.com/brianrobt?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=public%20repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fbrianrobt" alt="Public repositories"></a>
+  <a href="https://github.com/brianrobt?tab=repositories&q=&type=source"><img src="https://img.shields.io/github/stars/brianrobt?style=flat-square&label=repo%20stars" alt="Repository stars"></a>
+  <a href="https://www.brianrobt.com"><img src="https://img.shields.io/website?url=https%3A//www.brianrobt.com" alt="Personal website"></a>
 </p>
 
 <p>
