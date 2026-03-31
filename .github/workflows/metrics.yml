@@ -1,0 +1,39 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check whether metrics token is configured
+        id: token_check
+        run: |
+          if [ -n "${{ secrets.METRICS_TOKEN }}" ]; then
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            echo "METRICS_TOKEN is not configured; skipping metrics generation."
+          fi
+
+      - name: Generate profile metrics SVG
+        if: steps.token_check.outputs.has_token == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: brianrobt
+          filename: github-metrics.svg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: America/Chicago
